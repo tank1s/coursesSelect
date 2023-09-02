@@ -1,0 +1,35 @@
+Table: course
+------------+-------------+------+-----+---------+---------
+ Field      | Type        | Null | Key | Default | Remarks 
+------------+-------------+------+-----+---------+---------
+ cid        | VARCHAR(20) | NO   | PRI |         |         
+ cname      | VARCHAR(20) | YES  |     |         |         
+ teacher    | VARCHAR(20) | YES  |     |         |         
+ capacity   | VARCHAR(20) | YES  |     |         |         
+ selected   | VARCHAR(20) | YES  |     |         |         
+ timelength | VARCHAR(20) | YES  |     |         |         
+ place      | VARCHAR(20) | YES  |     |         |         
+------------+-------------+------+-----+---------+---------
+
+Table: courseselection
+-------+-------------+------+-----+---------+---------
+ Field | Type        | Null | Key | Default | Remarks 
+-------+-------------+------+-----+---------+---------
+ id    | INT(10)     | NO   | PRI |         |         
+ uid   | VARCHAR(20) | YES  |     |         |         
+ cid   | VARCHAR(20) | YES  |     |         |         
+-------+-------------+------+-----+---------+---------
+
+Table: user
+-----------+-------------+------+-----+---------+---------
+ Field     | Type        | Null | Key | Default | Remarks 
+-----------+-------------+------+-----+---------+---------
+ uid       | VARCHAR(20) | NO   | PRI |         |         
+ username  | VARCHAR(20) | YES  |     |         |         
+ password  | VARCHAR(20) | YES  |     |         |         
+ uname     | VARCHAR(20) | YES  |     |         |         
+ gender    | VARCHAR(20) | YES  |     |         |         
+ phone     | VARCHAR(20) | YES  |     |         |         
+ authority | INT(10)     | YES  |     |         |         
+-----------+-------------+------+-----+---------+---------
+
